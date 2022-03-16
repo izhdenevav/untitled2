@@ -1,0 +1,26 @@
+<!DOCTYPE  html>
+<html lang="en">
+<script src="script.js"></script>
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <div>
+        <h1>Список дел</h1>
+        <div class="div1">
+            <input id="inputTask" class="input" placeholder="Введите новое дело..."/>
+            <button id="crbt" onclick="createTask()" class="createButton">Сохранить</button>
+        </div>
+        <div>
+            <ol id="tasks">
+            </ol>
+        </div>
+        <div>
+            <button id="done" class="buttonFilter" onclick="render(this.id)">Сделано</button>
+            <button id="ntdone" class="buttonFilter" onclick="render(this.id)">Не сделано</button>
+            <button id="all" class="buttonFilter" onclick="render(this.id)">Все</button>
+        </div>
+    </div>
+<body class="body">
+</body>
+</html>
